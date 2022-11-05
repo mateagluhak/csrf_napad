@@ -29,7 +29,7 @@ h.get("/safe", (req, res) => {
 })
 
 if (externalUrl) {
-  const hostname = '127.0.0.1';
+  const hostname = 'localhost';
   h.listen(port, hostname, () => {
   console.log(`Server locally running at http://${hostname}:${port}/ and from
   outside on ${externalUrl}`);
